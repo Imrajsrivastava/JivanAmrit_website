@@ -1,0 +1,31 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.contButton{
+    width:100%;
+    margin-top: 20px;
+
+}
+.cardmedia{
+
+    align-items: center;
+   margin-bottom: 50px;
+}
+.cardmedia:hover{
+scale: 1.04;
+}
+.contactimage{
+    margin-bottom: 50px;
+}
+.formCont{
+    height: 470px;
+    color:green;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(80, 170, 183, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(55, 104, 150, 0.09) 0px -3px 5px;
+    padding: -10px;
+}
+.form{
+    
+    margin-top: 30px;
+}
