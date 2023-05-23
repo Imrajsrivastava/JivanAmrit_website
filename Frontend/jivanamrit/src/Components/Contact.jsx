@@ -8,11 +8,12 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
+import Topimage from "./Topimage";
 
 const Contact = () => {
   return (
     <>
-      <div className="contactimage">
+      {/* <div className="contactimage">
         {" "}
         <img
           src="https://www.cloud4c.com/kr/sites/kr/files/2022-07/cloud4c-company-contact-1Desktop.jpg"
@@ -20,8 +21,12 @@ const Contact = () => {
           height={"300px"}
           alt="contact"
         />
-      </div>
-      <div style={{ display: "flex", justifyContent: "space-around" }}>
+      </div> */}
+
+     <Topimage item={"https://www.cloud4c.com/kr/sites/kr/files/2022-07/cloud4c-company-contact-1Desktop.jpg"} heading={"Contact Us"} />
+
+
+      <div style={{ display: "flex", justifyContent: "space-around",marginTop:"50px" }}>
         <Container >
           {" "}
           <iframe className="iframe"

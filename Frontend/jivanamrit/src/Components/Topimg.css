@@ -1,11 +1,11 @@
-.imagecar {
+.imagecartop {
     display: block;
     width: 100%;
     /* border-radius: 20px; */
     /* height: auto; */
   }
   
-  .overlay {
+  .overlaytop {
 
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.5); /* Black see-through */
@@ -23,11 +23,11 @@
    
   }
   
-  .card .overlay {
+  .cardtop .overlaytop {
     opacity: 1;
   }
   
-  .text {
+  .texttop {
     color: rgb(214, 218, 230);
     font-size: 20px;
     padding: 30px;

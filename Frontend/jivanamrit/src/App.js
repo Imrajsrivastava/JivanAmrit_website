@@ -18,11 +18,11 @@ function App() {
 {/* <Navbarhome/> */}
  {/* <Navtwo/> */}
 {/* <Gallery/> */}
-    {/* <Homepage/> */}
+    <Homepage/>
    {/* <About/> */}
    {/* <Contact/> */}
 
-   <Aboutus/>
+   {/* <Aboutus/> */}
    <Footer/>
     <Routes>
       <Route path='/home' element={<Homepage/>}/>

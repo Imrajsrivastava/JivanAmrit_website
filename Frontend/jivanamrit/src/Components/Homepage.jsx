@@ -6,23 +6,41 @@ import img1 from '../Images/girl.jpg'
 import { Container } from '@mui/material';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import img from '../Images/Background.jpg'
+import logo from '../Images/jivanamrit.png'
+import {CardMedia} from '@mui/material';
+import {CardContent} from '@mui/material';
+import { Typography }from '@mui/material';
+import {Box} from '@mui/material'
+ import owner from '../Images/owner.jpg'
+ import IconButton from '@mui/material/IconButton';
+ import { useTheme } from '@mui/material/styles';
+ import SkipPreviousIcon from '@mui/icons-material/SkipPrevious';
+ import PlayArrowIcon from '@mui/icons-material/PlayArrow';
+ import SkipNextIcon from '@mui/icons-material/SkipNext';
+import ButtonBase from './ButtonBase';
+
 const Homepage = () => {
+  const theme = useTheme();
 
 const data=[
-  "https://media.gettyimages.com/id/532055707/vector/alternative-medicine-banners.jpg?s=612x612&w=0&k=20&c=uym5rMVCJLUOxg93c5qIMN_QQLmIpdXPjsiX7uE7dZQ=",
-"https://media.gettyimages.com/id/1059266092/vector/ginkgo-leaf-sketch-vector-seamless-pattern.jpg?s=612x612&w=0&k=20&c=WukI8VTrhALqFt2q6tZZpv4NFZugzxI9kSHCWfBj3y8=",
 
-  "https://media.gettyimages.com/id/114854538/photo/ayurvedic-massage-sign-goa.jpg?s=612x612&w=0&k=20&c=I-uMIHnj_XYsoe5Uz4nKVBrLBBeNIKuy9t4MMjsTTK4=",
 
-  "https://thumbs.dreamstime.com/b/various-aromatic-colorful-spices-herbs-ingredients-cooking-ayurveda-treatments-169744244.jpg",
 
-  "https://www.shutterstock.com/image-photo/fresh-herbs-garden-wooden-olive-260nw-1296916552.jpg",
+"https://www.bestherbs.in/wp-content/uploads/2020/01/Ayurveda-business-opportunity-in-India.jpg",
 
-  "https://media.gettyimages.com/id/1202544687/vector/massage-and-body-care-icon-set.jpg?s=612x612&w=0&k=20&c=48a7yS-v_5AdySrfDuZxeVgnaK_NaL7gM11dyS-U0cM=",
+"https://thumbs.dreamstime.com/b/healing-herbs-wooden-table-herbal-medicine-24030906.jpg",
 
-    "https://www.thehealthsite.com/wp-content/uploads/2021/11/ayurveda-category-picture.jpg",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRISLCUr4pqM1y7hYgCoVmSMAju2-Tt0W1Vww&usqp=CAU",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqifUFiOLEG8H_wK6JjCNPsIZUtndsPIYoI-cPyQugiTMlyQD4KoYJLBN1NFi3-GteC60&usqp=CAU"
+ "https://images.pexels.com/photos/9575086/pexels-photo-9575086.jpeg?cs=srgb&dl=pexels-axmarkazi-babaiyan-9575086.jpg&fm=jpg",
+
+ "https://thumbs.dreamstime.com/b/natural-herbal-medicine-fresh-herbs-flowers-aromatherapy-essential-oil-mortar-pestle-scissors-hemp-paper-102329035.jpg",
+
+"https://st2.depositphotos.com/1005563/5207/i/950/depositphotos_52076229-stock-photo-dried-medical-herbs.jpg",
+
+"https://media.istockphoto.com/id/1019597966/photo/herbs.jpg?s=612x612&w=0&k=20&c=ZcsO72g511QJeVhnpoYlYENXcVBb5Yawavy_FMMhBJU=",
+"https://st2.depositphotos.com/4760391/7188/i/950/depositphotos_71885923-stock-photo-chives-thyme-basil-rosemary-and.jpg",
+
+ "https://media.istockphoto.com/id/504069254/photo/fresh-herbs-on-wooden-background.jpg?s=612x612&w=0&k=20&c=UmuG3l9qSQDu0cOjjVG-9lfTMEYoOYoILa7oYGGsRmc=",
 ]
 
 
@@ -48,19 +66,19 @@ const data=[
 };
   return (
     
-    <div className='mainDiv'>
+    <div className='mainDivhome'>
     
   
   
       <Carousel 
       responsive={responsive}
       showDots={false}
-      autoPlaySpeed={2000}
+      autoPlaySpeed={3000}
       autoPlay={true}
       swipeable={true}
       infinite={true}
       draggable={true}
-      transitionDuration={500}
+      transitionDuration={2000}
       >
 
     {
@@ -71,10 +89,14 @@ const data=[
        <div className='card' >
      
           <img className='imagecar'
-            src={item} width={"100%"} height={"450px"}
+            src={item} width={"100%"} height={"441px"}
             alt="item"
           />
           <div className='overlay'>
+            <div className='jivanDiv'>
+              <h1 style={{color:"white"}}>Jivan Amrit</h1>
+            </div>
+
             <div className='text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, doloremque nulla commodi minima ipsam perspiciatis quidem? Mollitia voluptatem velit ullam dolorum obcaecati laborum veniam corporis sapiente repudiandae. Magnam, quam neque.</div>
           </div>
         </div>
@@ -83,8 +105,61 @@ const data=[
     })
     }
      </Carousel>
+
+
+
+  
+
+<div> <h1 style={{color:"rgb(77, 60, 60)", textAlign:"center"}}>~Jivan Amrit~</h1></div>
+
+
+<Box className="ownerdiv">
+
+<Box className="ownerdiv1"  style={{color:"rgb(77, 60, 60)", textAlign:"center"}}><h3>Jivan Amrit</h3> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nemo voluptatem at ipsum tempore ea eaque beatae aut alias, voluptatibus similique nulla eos doloribus, sequi repellendus sed rerum. Odio, tenetur quo sit earum esse sequi labore nobis, facere mollitia inventore totam velit ex debitis exercitationem! Consectetur temporibus ex rerum ab!</p> </Box>
+<Box className="ownerdiv2"><img src={owner} width ="100%" alt="" /></Box>
+</Box>
+
+
+
+
+
    
-   <Container style={{display:"flex"}} className='cardDiv'>
+
+ <Box className='cardhomepage'>
+  <Box className="boxhome">
+    <img src="https://images.pexels.com/photos/9575086/pexels-photo-9575086.jpeg?cs=srgb&dl=pexels-axmarkazi-babaiyan-9575086.jpg&fm=jpg" width={"200px"} alt="" />
+  </Box>
+  <Box className="boxhome">
+    <img src="https://st2.depositphotos.com/1005563/5207/i/950/depositphotos_52076229-stock-photo-dried-medical-herbs.jpg" width={"200px"} alt="" />
+  </Box>
+  <Box className="boxhome">
+  <img src="https://media.istockphoto.com/id/1019597966/photo/herbs.jpg?s=612x612&w=0&k=20&c=ZcsO72g511QJeVhnpoYlYENXcVBb5Yawavy_FMMhBJU=" width={"200px"} alt="" />
+  </Box>
+  <Box className="boxhome">
+  <img src="https://st2.depositphotos.com/4760391/7188/i/950/depositphotos_71885923-stock-photo-chives-thyme-basil-rosemary-and.jpg" width={"200px"} alt="" />
+  <Typography>Serving the nation since 1968</Typography>
+  </Box>
+
+ </Box>
+
+<div className='textmain'>
+  <h1>What is Ayurveda?</h1>
+  <div><h3>Ayurveda is a 5,000-year-old lifestyle science that promotes proactive and preemptive approaches to personal health and wellness. In Sanskrit the word āyuh means “life” and veda means “knowledge or science”.</h3></div>
+  <div>
+    <p>Originating in the Indus Valley, what is now modern-day India, Ayurveda is a science of self-healing and encompasses diet and nutrition, lifestyle, meditation, postures, breathing exercises, and medical herbs along with cleansing and rejuvenation programs for healing body, mind, and spirit.</p>
+    <p>Ayurveda is truly a holistic approach to wellness, and as a lifestyle medicine, it works! There’s a reason it has survived for 5,000 across generations, and the Ayurvedic Institute is a part of this generation’s movement to translate this ancient science into today’s living and pass on this knowledge to future generations.</p>
+  </div>
+</div>
+
+
+<div className='buttonimg'>
+  <ButtonBase/>
+</div>
+
+
+     
+   
+   {/* <Container style={{display:"flex"}} className='cardDiv'>
     <Container className='imgdiv'> <img className='imgcard' src={img1} alt='img1'/>
   </Container>
     <Container className='desDiv'> <h2>You ask or search about Ayurveda and you will find that Ayurveda is made up of two words-
@@ -92,74 +167,55 @@ const data=[
 Ayu and Veda and these are told as Ayu= Life and Veda = the knowledge.
 
 So meaning of Ayurveda comes to be Knowledge of the Life!</h2></Container>
-   </Container>
+   </Container> */}
+
+<div><h1 style={{margin:"20px 0px -17px 30px", color:"rgb(64, 60, 60)"}}>Power of Ayurvedic Herbs and Spices :-</h1></div>
 
 
 <div className='CircleDiv'>
-   <Container className='contcir'>
-   <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
-      <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
-      </Card.Body>
-    </Card><Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
-      <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
-      </Card.Body>
-    </Card>
-
-   </Container>
-
-   <Container className='contcir'>
-   <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
-      <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
-      </Card.Body>
-    </Card>
-
-</Container>
 
 <Container className='contcir'>
-<Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
+<Card className='home3card' style={{ width: '100%' }}>
+      <Card.Img variant="top" src='https://media.istockphoto.com/id/1298434383/photo/jars-of-spices.jpg?b=1&s=170667a&w=0&k=20&c=AiH7m0His_y1-yQIrncAGoPLdOOq5hqJxkZpYMbKs20='  width={"100%"}/>
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <Card.Title className='spice'>Ayurvedic Spices</Card.Title>
         <Card.Text>
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        <Button variant="" className='spiceb'>Go somewhere</Button>
       </Card.Body>
     </Card>
-
 </Container>
+
+
+
 <Container className='contcir'>
-<Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
+<Card className='home3card' style={{ width: '100%' }}>
+      <Card.Img variant="top" src='https://thumbs.dreamstime.com/b/ayurveda-16037170.jpg' width={"100%"} />
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <Card.Title className='flower'>Ayurvedic Flowers</Card.Title>
         <Card.Text>
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
         </Card.Text>
-        <Button variant="primary">Go somewhere</Button>
+        <Button className='flowerb' variant="">Go somewhere</Button>
+      </Card.Body>
+    </Card>
+</Container>
+
+
+
+<Container className='contcir'>
+<Card className='home3card' style={{ width: '100%' }}>
+      <Card.Img variant="top" src='https://fortmirrorprod.s3-ap-south-1.amazonaws.com/626532/healhTipsFolder/23801545210578418.jpg' width={"100%"} />
+      <Card.Body>
+        <Card.Title className='herb'>Ayurvedic Herbs</Card.Title>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </Card.Text>
+        <Button variant="" className='herbb'>Go somewhere</Button>
       </Card.Body>
     </Card>
 
@@ -178,6 +234,9 @@ So meaning of Ayurveda comes to be Knowledge of the Life!</h2></Container>
     <div className='desDiv'> <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum omnis consequatur, perspiciatis, ea sed explicabo distinctio, quidem sit reiciendis excepturi laborum eum repellendus repudiandae nulla odio perferendis voluptas numquam doloribus doloremque inventore quia dicta. Obcaecati eum fuga expedita quia laboriosam labore nesciunt doloribus, </h2></div>
    </div>
      */}
+
+
+
     </div>
 
 
