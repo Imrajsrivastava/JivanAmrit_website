@@ -9,18 +9,21 @@ import Gallery from './Components/Gallery';
 import Contact from './Components/Contact';
 import Footer from './Components/Footer';
 import Aboutus from './Components/Aboutus';
+import Topimage from './Components/Topimage';
 
 function App() {
   return (
 
    
 <BrowserRouter>
-{/* <Navbarhome/> */}
+<Navbarhome/>
  {/* <Navtwo/> */}
 {/* <Gallery/> */}
-    <Homepage/>
+    {/* <Homepage/> */}
    {/* <About/> */}
-   {/* <Contact/> */}
+   <Contact/>
+
+{/* <Topimage/> */}
 
    {/* <Aboutus/> */}
    <Footer/>

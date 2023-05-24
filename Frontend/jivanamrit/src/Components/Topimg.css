@@ -11,13 +11,14 @@
     background: rgba(0, 0, 0, 0.5); /* Black see-through */
     /* border-radius: 20px; */
 
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
+    /* position: absolute; */
+    /* top: 30px; */
+    /* bottom: 0; */
+    /* left: 0;
+    right: 0; */
+    
+    height: 120%;
+    width: 120%;
     opacity: 0;
     transition: .5s ease;
    
@@ -28,13 +29,13 @@
   }
   
   .texttop {
-    color: rgb(214, 218, 230);
+    color: rgb(243, 235, 235);
     font-size: 20px;
     padding: 30px;
     font-family: cursive;
     font-weight:bolder;
     position: absolute;
-    border: 7px solid rgb(135, 154, 184);
+    border: 7px solid rgb(184, 195, 213);
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);

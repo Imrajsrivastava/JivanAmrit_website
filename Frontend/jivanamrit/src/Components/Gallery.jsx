@@ -5,12 +5,19 @@ import ImageListItemBar from '@mui/material/ImageListItemBar';
 import ListSubheader from '@mui/material/ListSubheader';
 import IconButton from '@mui/material/IconButton';
 import InfoIcon from '@mui/icons-material/Info';
+import Topimage from './Topimage';
+import img from '../Images/vedarambh23.JPG'
 
 export default function Gallery() {
   return (
+
+    <>
+
+ <Topimage item={img} heading={" Our Gallery"} />
+   
     <ImageList sx={{ width: 500, height: 450 }}>
       <ImageListItem key="Subheader" cols={2}>
-        <ListSubheader component="div">December</ListSubheader>
+        <ListSubheader component="div">Jivan Amrit~</ListSubheader>
       </ImageListItem>
       {itemData.map((item) => (
         <ImageListItem key={item.img}>
@@ -34,7 +41,8 @@ export default function Gallery() {
           />
         </ImageListItem>
       ))}
-    </ImageList>
+    </ImageList> 
+    </>
   );
 }
 

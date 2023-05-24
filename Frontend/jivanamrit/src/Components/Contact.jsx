@@ -26,7 +26,7 @@ const Contact = () => {
      <Topimage item={"https://www.cloud4c.com/kr/sites/kr/files/2022-07/cloud4c-company-contact-1Desktop.jpg"} heading={"Contact Us"} />
 
 
-      <div style={{ display: "flex", justifyContent: "space-around",marginTop:"50px" }}>
+      <div  className="containctdiv1" style={{ display: "flex", justifyContent: "space-around",marginTop:"50px" }}>
         <Container >
           {" "}
           <iframe className="iframe"
@@ -107,7 +107,7 @@ const Contact = () => {
         </Container>
       </Container>
 
-      <Container style={{ display: "flex" }}>
+      <Container className="downContainercon" style={{ display: "flex" }}>
         <Container className="cardmedia">
           <Card sx={{ maxWidth: 345 }}>
             <CardActionArea>

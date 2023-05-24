@@ -7,13 +7,13 @@
  /* height: 300px; */
 }
 
-.Contimg{
+/* .Contimg{
     width: 500px;
     background-color: rgb(228, 228, 228);
     border:1px solid rgb(183, 175, 175);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(80, 170, 183, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(55, 104, 150, 0.09) 0px -3px 5px;
-}
-.logocard{
+} */
+/* .logocard{
     width: 100%;
     
 }
@@ -30,4 +30,43 @@
 }
 .text-white{
     width:100%;
+} */
+
+.ownerdivabt{
+    margin: 30px;
+   display: flex;
+   background-color: rgb(224, 236, 236);
+   justify-content: space-around;
+   border-radius: 20px;
+  }
+  .ownerdiv1abt{
+    
+  text-align: center;
+  margin-top: 30px;
+  justify-content: center;
+  padding: 30px;
+  
+  }
+
+
+@media only screen and (max-width: 1000px) {
+ .ownerdivabt{
+    flex-direction: column;
+   
+ }
+ .aboutContainer{
+    flex-direction: column;
+ }
 }
+  
+  @media only screen and (max-width: 600px) {
+    .ownerdivabt{
+        flex-direction: column;
+       
+     }
+     .aboutContainer{
+        flex-direction: column;
+     }
+   
+    
+    }

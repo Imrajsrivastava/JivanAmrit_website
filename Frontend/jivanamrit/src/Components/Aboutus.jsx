@@ -19,6 +19,8 @@ import Typography from '@mui/material/Typography';
 import SkipPreviousIcon from '@mui/icons-material/SkipPrevious';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import SkipNextIcon from '@mui/icons-material/SkipNext';
+import owner from '../Images/owner.jpg'
+
 import {
     MDBCard,
     MDBCardTitle,
@@ -40,56 +42,27 @@ const Aboutus = () => {
 
 
 
-    <Card sx={{ display: 'flex', height:"350px",padding:"10px", margin:"30px",boxShadow:" rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset", }}>
-      <Box sx={{ display: 'flex', flexDirection: 'column', width:"50%" }}>
-        <CardContent sx={{ flex: '1 0 auto' }}>
-          <Typography component="div" variant="h5">
-            Live From Space
-          </Typography>
-          <Typography variant="subtitle1" color="text.secondary" component="div">
-            Mac Miller
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum doloremque, consequuntur officiis eos veritatis molestias laudantium temporibus reprehenderit iste. Nisi quaerat sunt obcaecati in minus quia aut esse quam sed.
-          </Typography>
-        </CardContent>
-        <Box sx={{ display: 'flex', alignItems: 'center', pl: 1, pb: 1 }}>
-          <Button variant="primary">See More</Button>
-        </Box>
-      </Box>
-      <CardMedia className="logocard"
-        component="img"
-        sx={{ width: "40%" }}
-        image={logo}
-        alt="Live from space album cover"
-      />
-    </Card>
+    <Box className="ownerdivabt">
+
+<Box className="ownerdiv1abt"  style={{color:"rgb(77, 60, 60)", textAlign:"center"}}><h3>Jivan Amrit</h3> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nemo voluptatem at ipsum tempore ea eaque beatae aut alias, voluptatibus similique nulla eos doloribus, sequi repellendus sed rerum. Odio, tenetur quo sit earum esse sequi labore nobis, facere mollitia inventore totam velit ex debitis exercitationem! Consectetur temporibus ex rerum ab!</p> </Box>
+<Box className="ownerdiv2abt"><img src={owner} width ="100%" alt="" /></Box>
+</Box>
+
+
+   
 
 
 
 
 
 
-
- 
-
-     {/* <Container className='Contabt' style={{display:"flex"}}>
-    
-
-      <Container  className='Contimg'>
-        <img src={logo} width={"100%"} height={"450px"} alt="" />
-      </Container>
-     
-     <Container className='contdes'>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et qui magnam atque dicta odit temporibus cumque expedita. Voluptatum architecto itaque aliquam impedit, quae delectus, cum unde esse reprehenderit est earum inventore officiis eius necessitatibus laudantium ad? Mollitia officiis corrupti repudiandae aperiam dignissimos quasi similique, nemo nobis velit eligendi est unde.
-     </Container>
-
-     </Container>
-
- */}
+    <div style={{color:"rgb(77, 60, 60)", textAlign:"center",marginBottom:"40px"}}>
+      <h1>Powerful Ayurvedic Practices</h1>
+    </div>
 
 
 
-
-     <Container style={{ display: "flex" }}>
+     <Container className="aboutContainer" style={{ display: "flex" }}>
         <Container className="cardmedia">
           <Card sx={{ maxWidth: 345 }}>
             <CardActionArea>
@@ -171,37 +144,24 @@ const Aboutus = () => {
 
 
 
+      <Box className="ownerdivabt">
 
-
-
-
-
-   <Card sx={{ display: 'flex', height:"350px",padding:"10px", margin:"30px",boxShadow:" rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset", }}>
-
-<CardMedia >
-
+<Box className="ownerdiv2abt">
 
 <iframe width="660" height="350" src="https://www.youtube.com/embed/S_L6Ato1ndk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-</CardMedia>
+
+  </Box>
+<Box className="ownerdiv1abt"  style={{color:"rgb(77, 60, 60)", textAlign:"center"}}><h3>Jivan Amrit</h3> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nemo voluptatem at ipsum tempore ea eaque beatae aut alias, voluptatibus similique nulla eos doloribus, sequi repellendus sed rerum. Odio, tenetur quo sit earum esse sequi labore nobis, facere mollitia inventore totam velit ex debitis exercitationem! Consectetur temporibus ex rerum ab!</p> 
+ <Button variant='danger'>See More Videos</Button>
+</Box>
+
+</Box>
 
 
-      <Box sx={{ display: 'flex', flexDirection: 'column', width:"50%" }}>
-        <CardContent sx={{ flex: '1 0 auto' }}>
-          <Typography component="div" variant="h5">
-            Live From Space
-          </Typography>
-          <Typography variant="subtitle1" color="text.secondary" component="div">
-            Mac Miller
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum doloremque, consequuntur officiis eos veritatis molestias laudantium temporibus reprehenderit iste. Nisi quaerat sunt obcaecati in minus quia aut esse quam sed.
-          </Typography>
-        </CardContent>
-        <Box sx={{ display: 'flex', alignItems: 'center', pl: 1, pb: 1 }}>
-          <Button variant="primary">See More</Button>
-        </Box>
-      </Box>
-      
-    </Card>
+
+
+
 
 
 
