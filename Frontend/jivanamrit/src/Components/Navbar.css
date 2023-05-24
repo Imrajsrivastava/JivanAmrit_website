@@ -1,0 +1,27 @@
+*{
+    /* color: white; */
+    font-weight: bold;
+}
+.logo{
+    /* border-radius: 50px; */
+    /* background-color: rgb(233, 229, 224); */
+}
+
+.navbar{
+    background-color:#27bbbd;
+    /* margin: -50px -5px -80px -5 ; */
+}
+.navtag{
+    color: white;
+}
+
+.logodiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+}
+.lines{
+    color:green
+}
